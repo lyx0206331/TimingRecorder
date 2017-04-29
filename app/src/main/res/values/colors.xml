@@ -5,4 +5,9 @@
     <color name="colorAccent">#FF4081</color>
     <color name="tagLight">#b1c914</color>
     <color name="tagDark">#206fa1</color>
+
+    <color name="fab_color_pressed">#007787</color>
+    <color name="fab_color_shadow">#44000000</color>
+    <color name="text_like_counter">#2b5a83</color>
+    <color name="paint_color">#dddddd</color>
 </resources>

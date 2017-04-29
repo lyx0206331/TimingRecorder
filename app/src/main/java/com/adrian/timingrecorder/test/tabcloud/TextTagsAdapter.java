@@ -46,6 +46,13 @@ public class TextTagsAdapter extends TagsAdapter {
                 Toast.makeText(context, "Tag " + position + " clicked", Toast.LENGTH_SHORT).show();
             }
         });
+        tv.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Toast.makeText(context, "LongClick:" + position, Toast.LENGTH_SHORT).show();
+                return true;
+            }
+        });
         tv.setTextColor(Color.WHITE);
         return tv;
     }

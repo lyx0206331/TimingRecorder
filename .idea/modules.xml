@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TimingRecorder.iml" filepath="$PROJECT_DIR$/TimingRecorder.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circlerefresh/circlerefresh.iml" filepath="$PROJECT_DIR$/circlerefresh/circlerefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flowingdrawer/flowingdrawer.iml" filepath="$PROJECT_DIR$/flowingdrawer/flowingdrawer.iml" />
       <module fileurl="file://$PROJECT_DIR$/tabcloud3d/tabcloud3d.iml" filepath="$PROJECT_DIR$/tabcloud3d/tabcloud3d.iml" />
     </modules>
   </component>

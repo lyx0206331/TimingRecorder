@@ -10,7 +10,9 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/circlerefresh" />
+            <option value="$PROJECT_DIR$/dialogeffects" />
             <option value="$PROJECT_DIR$/flowingdrawer" />
+            <option value="$PROJECT_DIR$/metaballloading" />
             <option value="$PROJECT_DIR$/tabcloud3d" />
           </set>
         </option>

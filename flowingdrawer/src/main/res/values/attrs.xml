@@ -7,13 +7,13 @@
     <declare-styleable name="ElasticDrawer">
 
         <!-- Drawable to use for the background of the menu. -->
-        <attr name="edMenuBackground" format="color" />
+        <attr name="edMenuBackground" format="color|reference" />
 
         <!-- The size of the menu. -->
-        <attr name="edMenuSize" format="dimension" />
+        <attr name="edMenuSize" format="dimension|reference" />
 
         <!-- The touch bezel size. -->
-        <attr name="edTouchBezelSize" format="dimension" />
+        <attr name="edTouchBezelSize" format="dimension|reference" />
 
         <!-- The maximum animation duration -->
         <attr name="edMaxAnimationDuration" format="integer" />

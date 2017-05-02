@@ -6,6 +6,10 @@
     <color name="tagLight">#b1c914</color>
     <color name="tagDark">#206fa1</color>
 
+    <color name="faded_blue">#7480FA</color>
+    <color name="soft_purple">#AF72F8</color>
+    <color name="pink_flamingo">#FF61F4</color>
+
     <color name="fab_color_pressed">#007787</color>
     <color name="fab_color_shadow">#44000000</color>
     <color name="text_like_counter">#2b5a83</color>

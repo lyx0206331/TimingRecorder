@@ -14,7 +14,7 @@ import java.util.List;
  * Created by ranqing on 2017/5/2.
  */
 
-public class RotateBehavior extends CoordinatorLayout.Behavior<FloatingActionButton> {
+public class RotateBehavior extends FloatingActionButton.Behavior {
 
     private static final String TAG = RotateBehavior.class.getSimpleName();
 
@@ -34,7 +34,7 @@ public class RotateBehavior extends CoordinatorLayout.Behavior<FloatingActionBut
     public boolean onDependentViewChanged(CoordinatorLayout parent, FloatingActionButton child, View dependency) {
         float translationY = getFabTranslationYForSnackbar(parent, child);
         float percentComplete = -translationY / dependency.getHeight();
-        child.setRotation(-90 * percentComplete);
+        child.setRotation(-135 * percentComplete);
         child.setTranslationY(translationY);
         return false;
     }

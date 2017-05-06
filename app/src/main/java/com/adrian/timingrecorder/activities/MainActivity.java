@@ -3,7 +3,10 @@ package com.adrian.timingrecorder.activities;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.view.ViewPager;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -12,13 +15,24 @@ import android.widget.Toast;
 import com.adrian.flowingdrawer.ElasticDrawer;
 import com.adrian.flowingdrawer.FlowingDrawer;
 import com.adrian.timingrecorder.R;
+import com.adrian.timingrecorder.fragments.CompletedTaskFragment;
+import com.adrian.timingrecorder.fragments.PlanTaskFragment;
+import com.adrian.timingrecorder.fragments.ViewPagerAdapter;
 import com.adrian.timingrecorder.test.flowingdrawer.MenuListFragment;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private RelativeLayout mContainerRL;
     private FlowingDrawer mFlowingDrawer;
     private FloatingActionButton mAddFABtn;
+    private TabLayout mTabLayout;
+    private ViewPager mViewPager;
+    private List<Fragment> fragments;
+    private List<String> titles;
+    private ViewPagerAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +50,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         mContainerRL = (RelativeLayout) findViewById(R.id.rl_main);
         mFlowingDrawer = (FlowingDrawer) findViewById(R.id.flowing_drawer);
         mAddFABtn = (FloatingActionButton) findViewById(R.id.fab);
+        mTabLayout = (TabLayout) findViewById(R.id.tablayout);
+        mViewPager = (ViewPager) findViewById(R.id.viewpager);
+
+        mTabLayout.setupWithViewPager(mViewPager);
+        mTabLayout.setTabMode(TabLayout.MODE_FIXED);
 
         mFlowingDrawer.setTouchMode(ElasticDrawer.TOUCH_MODE_BEZEL);
         setupToolbar();
@@ -43,6 +62,15 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         setupMenu();
 
         mAddFABtn.setOnClickListener(this);
+
+        fragments = new ArrayList<>();
+        fragments.add(CompletedTaskFragment.newInstance("CompleteTask"));
+        fragments.add(PlanTaskFragment.newInstance("PlanTask"));
+        titles = new ArrayList<>();
+        titles.add("已完成");
+        titles.add("未完成");
+        adapter = new ViewPagerAdapter(getSupportFragmentManager(), fragments, titles);
+        mViewPager.setAdapter(adapter);
     }
 
     @Override

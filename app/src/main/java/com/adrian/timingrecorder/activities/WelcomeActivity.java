@@ -20,7 +20,6 @@ public class WelcomeActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome);
     }
 
     @Override
@@ -36,5 +35,10 @@ public class WelcomeActivity extends BaseActivity {
     @Override
     protected void loadData() {
 
+    }
+
+    @Override
+    protected int getLayoutResId() {
+        return R.layout.activity_welcome;
     }
 }

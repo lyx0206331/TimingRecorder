@@ -14,23 +14,31 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".activities.MainActivity"
-            android:theme="@style/AppTheme2"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
         <activity android:name=".test.tabcloud.TestTabCloudActivity" />
         <activity android:name=".test.tabcloud.FragmentTestActivity" />
-        <activity android:name=".test.circlerefresh.TestCircleRefreshActivity"></activity>
+        <activity android:name=".test.circlerefresh.TestCircleRefreshActivity" />
         <activity
             android:name=".test.flowingdrawer.FlowingDrawerActivity"
-            android:theme="@style/AppTheme2"></activity>
+            android:theme="@style/AppTheme2" />
         <activity
             android:name=".activities.WelcomeActivity"
-            android:theme="@style/AppTheme2"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.EditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
         </activity>
     </application>
 

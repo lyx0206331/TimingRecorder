@@ -2,6 +2,7 @@ package com.adrian.timingrecorder.test.tabcloud;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.Gravity;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 
 
 import com.adrian.tabcloud3d.TagsAdapter;
+import com.adrian.timingrecorder.R;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -37,7 +39,8 @@ public class TextTagsAdapter extends TagsAdapter {
     @Override
     public View getView(final Context context, final int position, ViewGroup parent) {
         TextView tv = new TextView(context);
-        tv.setText("No." + position);
+        tv.setTextSize(10);
+        tv.setText("计划" + position);
         tv.setGravity(Gravity.CENTER);
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +57,15 @@ public class TextTagsAdapter extends TagsAdapter {
             }
         });
         tv.setTextColor(Color.WHITE);
+        Drawable greenDrawable = context.getResources().getDrawable(R.drawable.point_green);
+        Drawable grayDrawable = context.getResources().getDrawable(R.drawable.point_gray);
+        greenDrawable.setBounds(0, 0, greenDrawable.getMinimumWidth(), greenDrawable.getMinimumHeight());
+        grayDrawable.setBounds(0, 0, grayDrawable.getMinimumWidth(), grayDrawable.getMinimumHeight());
+        if (position % 2 == 0) {
+            tv.setCompoundDrawables(null, greenDrawable, null, null);
+        } else {
+            tv.setCompoundDrawables(null, grayDrawable, null, null);
+        }
         return tv;
     }
 

@@ -1,1 +1,1 @@
-include ':app', ':tabcloud3d', ':circlerefresh', ':flowingdrawer', ':metaballloading', ':dialogeffects'
+include ':app', ':tabcloud3d', ':circlerefresh', ':flowingdrawer', ':metaballloading', ':dialogeffects', ':slidedelview'

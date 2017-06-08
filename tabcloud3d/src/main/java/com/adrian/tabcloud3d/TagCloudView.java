@@ -278,7 +278,7 @@ public class TagCloudView extends ViewGroup implements Runnable, TagsAdapter.OnD
             View child = getChildAt(i);
             Tag tag = mTagCloud.get(i);
             if (child != null && child.getVisibility() != GONE) {
-                tagsAdapter.onThemeColorChanged(child, tag.getColor());
+                tagsAdapter.onThemeColorChanged(child, tag.getTransparent());
                 child.setScaleX(tag.getScale());
                 child.setScaleY(tag.getScale());
                 int left, top;

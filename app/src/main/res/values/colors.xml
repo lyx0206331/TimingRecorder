@@ -5,6 +5,10 @@
     <color name="colorAccent">#FF4081</color>
     <color name="tagLight">#b1c914</color>
     <color name="tagDark">#206fa1</color>
+    <color name="green">#1CFF1B</color>
+    <color name="red">#FF3B11</color>
+    <color name="gray">#C0C0C0</color>
+    <color name="shadow">#15505050</color>
 
     <color name="faded_blue">#7480FA</color>
     <color name="soft_purple">#AF72F8</color>
@@ -15,4 +19,15 @@
     <color name="fab_color_shadow">#44000000</color>
     <color name="text_like_counter">#2b5a83</color>
     <color name="paint_color">#dddddd</color>
+
+    <color name="background">#FFFFFF</color>
+    <color name="split_line">#11112233</color>
+    <color name="text1">#59B29C</color>
+    <color name="text2">#333333</color>
+
+    <color name="color1">#F0F0F0</color>
+    <color name="color2">#FFFFFF</color>
+    <color name="color3">#B0B0B0</color>
+    <color name="color4">#666666</color>
+    <color name="color5">#57C5E8</color>
 </resources>

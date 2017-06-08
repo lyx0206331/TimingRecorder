@@ -147,4 +147,8 @@ public class Tag {
         }
         return Color.argb(result[0], result[1], result[2], result[3]);
     }
+
+    public int getTransparent() {
+        return 0x00000000;
+    }
 }

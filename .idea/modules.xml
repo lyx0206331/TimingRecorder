@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/dialogeffects/dialogeffects.iml" filepath="$PROJECT_DIR$/dialogeffects/dialogeffects.iml" />
       <module fileurl="file://$PROJECT_DIR$/flowingdrawer/flowingdrawer.iml" filepath="$PROJECT_DIR$/flowingdrawer/flowingdrawer.iml" />
       <module fileurl="file://$PROJECT_DIR$/metaballloading/metaballloading.iml" filepath="$PROJECT_DIR$/metaballloading/metaballloading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slidedelview/slidedelview.iml" filepath="$PROJECT_DIR$/slidedelview/slidedelview.iml" />
       <module fileurl="file://$PROJECT_DIR$/tabcloud3d/tabcloud3d.iml" filepath="$PROJECT_DIR$/tabcloud3d/tabcloud3d.iml" />
     </modules>
   </component>

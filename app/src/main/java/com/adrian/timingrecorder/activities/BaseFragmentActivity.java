@@ -46,4 +46,9 @@ public class BaseFragmentActivity extends BaseActivity {
     protected void loadData() {
 
     }
+
+    @Override
+    protected int getLayoutResId() {
+        return 0;
+    }
 }

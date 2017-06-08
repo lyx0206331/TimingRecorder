@@ -13,6 +13,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(getLayoutResId());
         initVariables();
         initViews();
         loadData();
@@ -37,6 +38,13 @@ public abstract class BaseActivity extends AppCompatActivity {
      * 数据加载
      */
     protected abstract void loadData();
+
+    /**
+     * 返回布局ID
+     *
+     * @return
+     */
+    protected abstract int getLayoutResId();
 
     protected void startActivity(Class<? extends BaseActivity> cls, Bundle bundle) {
         Intent intent = new Intent(this, cls);

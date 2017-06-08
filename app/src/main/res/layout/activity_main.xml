@@ -19,13 +19,6 @@
         android:background="@android:color/background_light"
         android:fitsSystemWindows="true">
 
-        <RelativeLayout
-            android:id="@+id/rl_main"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </RelativeLayout>
-
         <android.support.design.widget.AppBarLayout
             android:id="@+id/appbarlayout"
             android:layout_width="match_parent"
@@ -43,14 +36,33 @@
                 app:expandedTitleMarginStart="48dp"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-                <ImageView
-                    android:id="@+id/iv_ctl"
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:fitsSystemWindows="true"
-                    android:src="@drawable/banner0"
-                    android:scaleType="fitXY"
-                    app:layout_collapseMode="parallax" />
+                    app:layout_collapseMode="parallax"
+                    android:fitsSystemWindows="true">
+
+
+                    <ImageView
+                        android:id="@+id/iv_ctl"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fitsSystemWindows="true"
+                        android:src="@drawable/banner0"
+                        android:scaleType="fitXY"
+                        app:layout_collapseMode="parallax" />
+
+                    <com.adrian.tabcloud3d.TagCloudView
+                        android:id="@+id/tag_cloud"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp"
+                        android:layout_margin="10dp"
+                        app:autoScrollMode="uniform"
+                        app:darkColor="@color/tagDark"
+                        app:lightColor="@color/tagLight"
+                        app:radiusPercent="0.6"
+                        app:scrollSpeed="3" />
+                </FrameLayout>
 
                 <android.support.v7.widget.Toolbar
                     android:id="@+id/toolbar"
